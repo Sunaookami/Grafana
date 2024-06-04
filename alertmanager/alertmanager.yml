@@ -1,10 +1,10 @@
 global:
   resolve_timeout: 5m
   smtp_smarthost: smtp.gmail.com:587
-  smtp_from: ${YOUR MAIL ADRESSES}
-  smtp_auth_username: ${YOUR MAIL ADRESSES}
-  smtp_auth_password: ${your auth passwd}
-  smtp_auth_identity: ${YOUR MAIL ADRESSES}
+  smtp_from: your_mail_address
+  smtp_auth_username: your_mail_address
+  smtp_auth_password: your_auth_passwd
+  smtp_auth_identity: your_mail_address
 
 route:
   group_by: ['alertname', 'severity']
@@ -16,4 +16,4 @@ route:
 receivers:
 - name: 'email'
   email_configs:
-  - to: '${YOUR MAIL ADRESSES}'
+  - to: your_mail_address
