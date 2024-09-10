@@ -4,7 +4,7 @@ global:
 
     #rule_files:
     #- rules.yml
-
+# uncomment above to enabled the defined rule in rule.yml 
 alerting:
   alertmanagers:
     - static_configs:
